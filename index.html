@@ -11,137 +11,94 @@
       font-family: serif;
       margin: 0;
       text-align: center;
+      background-color: #000; /* solid black base */
       background-image: url('https://www.transparenttextures.com/patterns/dark-mosaic.png');
+      background-blend-mode: multiply;
       animation: pulse 8s infinite alternate;
     }
 
     @keyframes pulse {
-      from { filter: brightness(1); }
-      to { filter: brightness(1.4) hue-rotate(10deg); }
+      0% { filter: brightness(1); }
+      100% { filter: brightness(1.4); }
     }
 
     header {
-      background: linear-gradient(90deg, #5b0000, #300000, #5b0000);
+      background: linear-gradient(90deg, darkred, crimson, firebrick, black);
       padding: 20px;
-      border-bottom: 4px double #660000;
-      box-shadow: inset 0 0 30px #ff000040;
-      text-shadow: 0 0 10px #ff0000, 0 0 25px #550000;
+      border-bottom: 4px double darkred;
+      animation: glow 6s infinite alternate;
+    }
+
+    @keyframes glow {
+      from { filter: brightness(1); }
+      to { filter: brightness(1.6); }
     }
 
     header h1 {
-      color: #ff5555;
-      font-size: 2.5em;
-      letter-spacing: 3px;
-      text-transform: uppercase;
-    }
-
-    header p {
-      color: #b33;
-      font-style: italic;
-      text-shadow: 0 0 6px #ff0000;
+      color: #ff4444;
+      text-shadow: 0 0 15px #ff0000, 0 0 30px #aa0000;
+      font-size: 2.4em;
     }
 
     nav {
-      background: #150000;
-      border-top: 2px solid #660000;
-      border-bottom: 2px solid #660000;
-      padding: 8px;
-      text-shadow: 0 0 6px #ff0000;
+      background: rgba(0, 0, 0, 0.9);
+      border-top: 2px solid #900;
+      border-bottom: 2px solid #900;
+      padding: 10px;
     }
 
     nav a {
-      color: #cc0000;
+      color: #ff3333;
       font-weight: bold;
       text-decoration: none;
       margin: 10px;
     }
 
     nav a:hover {
-      text-decoration: underline;
       color: #fff;
+      text-shadow: 0 0 10px #f00;
     }
 
     marquee {
-      color: #ff2222;
+      color: #ff3333;
       font-size: 1.1em;
-      background: #1a0000;
-      padding: 6px;
-      border-top: 1px solid #660000;
-      border-bottom: 1px solid #660000;
-      text-shadow: 0 0 8px #ff0000;
+      text-shadow: 0 0 10px #f00;
     }
 
     .content {
       margin: 40px auto;
       width: 80%;
-      background: rgba(30, 0, 0, 0.9);
-      border: 3px double #550000;
+      background: rgba(30, 0, 0, 0.6);
+      border: 3px double darkred;
       padding: 30px;
-      color: #ffdddd;
+      color: #fdd;
       text-align: left;
-      box-shadow: inset 0 0 40px #440000, 0 0 40px #ff000020;
+      box-shadow: 0 0 25px #600 inset;
     }
 
     .content h2 {
-      font-size: 2em;
+      font-size: 1.8em;
       color: #ff6666;
-      text-shadow: 0 0 8px #ff0000, 0 0 25px #550000;
+      text-shadow: 0 0 10px #f00;
       text-align: center;
-      margin-bottom: 25px;
-    }
-
-    .content p {
-      line-height: 1.6;
-      color: #ffcccc;
-      text-shadow: 0 0 5px #550000;
-    }
-
-    a {
-      color: #ff0000;
-      text-decoration: underline;
-    }
-
-    a:hover {
-      color: #fff;
     }
 
     footer {
-      color: #a22;
-      border-top: 2px solid #660000;
+      color: #aa5555;
+      border-top: 2px solid #900;
       padding: 15px;
       margin-top: 40px;
-      background: #100000;
-      text-shadow: 0 0 5px #ff0000;
-    }
-
-    /* Grain overlay effect */
-    body::before {
-      content: "";
-      position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background-image: url('https://www.transparenttextures.com/patterns/noise-pattern-with-subtle-cross-lines.png');
-      opacity: 0.08;
-      z-index: 1;
-      pointer-events: none;
-      mix-blend-mode: overlay;
-    }
-
-    * {
-      position: relative;
-      z-index: 2;
+      background: rgba(0, 0, 0, 0.9);
     }
   </style>
 </head>
 <body>
   <header>
     <h1>GIGGLE ORG.</h1>
-    <p><em>“Through crimson laughter, we awaken.”</em></p>
+    <p><em>“Through chaos, color, and cackling — we transcend.”</em></p>
   </header>
 
-  <marquee behavior="alternate" scrollamount="5">☠ Welcome, disciple of the red veil ☠ | ☠ Giggleism breathes through the static ☠</marquee>
+  <marquee behavior="alternate" scrollamount="5">☠ Welcome, traveler of the absurd cosmos ☠ | 🔥 Giggleism bleeds through the static 🔥</marquee>
 
   <nav>
     <a href="index.html">Home</a>
@@ -152,18 +109,18 @@
   <div class="content">
     <h2>The Door Opens</h2>
     <p>
-      You have reached the digital sanctum of <strong>Giggle org.</strong> — a shrine buried in code and static. The laughter echoes through bleeding circuits, and the screen hums with forgotten hymns.
+      You have reached the digital sanctum of <strong>Giggle org.</strong> — a shrine buried in code and static. The laughter echoes through bleeding circuits, and the screen hums with forgotten binary chants.
     </p>
     <p>
-      Here, nothing is holy, yet everything glows. Each byte pulses with red light. Each pixel remembers the chaos before order. The doctrine shifts with every refresh.
+      Here, nothing is holy, yet everything glows red. Each hyperlink is a whisper. Each pixel remembers the color before color. The doctrine shifts with every refresh.
     </p>
     <p>
-      <a href="aek-cicak.html">Enter the Aek Cicak Prophecy →</a>
+      <a href="aek-cicak.html" style="color: #ff4444; text-decoration: underline;">Enter the Aek Cicak Prophecy →</a>
     </p>
   </div>
 
   <footer>
-    <p><em>Giggle org. — Transmissions logged since cycle 0666.</em></p>
+    <p><em>Giggle org. — The laughter never decays.</em></p>
   </footer>
 </body>
 </html>
