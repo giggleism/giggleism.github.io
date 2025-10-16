@@ -6,149 +6,164 @@
   <title>Giggle org. - Home</title>
   <style>
     body {
-      background: radial-gradient(circle at top, #200000, #000000 80%);
-      color: #f8d7d7;
-      font-family: 'Comic Sans MS', 'Times New Roman', cursive;
+      background: radial-gradient(circle at center, #300000, #000000);
+      color: #fdd;
+      font-family: serif;
       margin: 0;
       text-align: center;
       background-image: url('https://www.transparenttextures.com/patterns/dark-mosaic.png');
-      background-blend-mode: multiply;
-      cursor: crosshair;
+      animation: pulse 8s infinite alternate;
+    }
+
+    @keyframes pulse {
+      from { filter: brightness(1); }
+      to { filter: brightness(1.4) hue-rotate(10deg); }
     }
 
     header {
-      background: linear-gradient(90deg, #800000, #b30000, #8b0000);
-      padding: 25px;
-      border-bottom: 4px double #ff0000;
-      animation: glow 4s infinite alternate;
-      box-shadow: 0 0 25px #ff000033 inset;
-    }
-
-    @keyframes glow {
-      from { filter: brightness(1); }
-      to { filter: brightness(1.8); }
+      background: linear-gradient(90deg, #5b0000, #300000, #5b0000);
+      padding: 20px;
+      border-bottom: 4px double #660000;
+      box-shadow: inset 0 0 30px #ff000040;
+      text-shadow: 0 0 10px #ff0000, 0 0 25px #550000;
     }
 
     header h1 {
       color: #ff5555;
-      text-shadow: 0 0 15px #ff0000, 0 0 30px #ff2222;
       font-size: 2.5em;
-      letter-spacing: 2px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
     }
 
     header p {
-      color: #ffaaaa;
-      text-shadow: 0 0 6px #ff2222;
+      color: #b33;
       font-style: italic;
+      text-shadow: 0 0 6px #ff0000;
     }
 
     nav {
-      background: rgba(20,0,0,0.9);
-      border-top: 2px solid #ff0000;
-      border-bottom: 2px solid #ff0000;
-      padding: 12px;
-      box-shadow: 0 0 15px #660000 inset;
+      background: #150000;
+      border-top: 2px solid #660000;
+      border-bottom: 2px solid #660000;
+      padding: 8px;
+      text-shadow: 0 0 6px #ff0000;
     }
 
     nav a {
-      color: #ff6666;
+      color: #cc0000;
       font-weight: bold;
       text-decoration: none;
-      margin: 12px;
-      text-shadow: 0 0 5px #ff0000;
-      transition: 0.3s;
+      margin: 10px;
     }
 
     nav a:hover {
-      color: #fff0f0;
-      text-shadow: 0 0 10px #ff5555;
+      text-decoration: underline;
+      color: #fff;
+    }
+
+    marquee {
+      color: #ff2222;
+      font-size: 1.1em;
+      background: #1a0000;
+      padding: 6px;
+      border-top: 1px solid #660000;
+      border-bottom: 1px solid #660000;
+      text-shadow: 0 0 8px #ff0000;
     }
 
     .content {
-      margin: 50px auto;
+      margin: 40px auto;
       width: 80%;
-      background: rgba(50,0,0,0.4);
-      border: 3px double #ff0000;
-      padding: 35px;
+      background: rgba(30, 0, 0, 0.9);
+      border: 3px double #550000;
+      padding: 30px;
       color: #ffdddd;
       text-align: left;
-      box-shadow: 0 0 25px #660000 inset;
+      box-shadow: inset 0 0 40px #440000, 0 0 40px #ff000020;
     }
 
     .content h2 {
       font-size: 2em;
-      color: #ffaaaa;
-      text-shadow: 0 0 10px #ff2222;
+      color: #ff6666;
+      text-shadow: 0 0 8px #ff0000, 0 0 25px #550000;
       text-align: center;
-      letter-spacing: 1px;
+      margin-bottom: 25px;
     }
 
     .content p {
       line-height: 1.6;
+      color: #ffcccc;
+      text-shadow: 0 0 5px #550000;
     }
 
-    marquee {
-      color: #ff6666;
-      font-size: 1.2em;
-      text-shadow: 0 0 10px #ff0000;
-      background: rgba(30,0,0,0.8);
-      border-top: 1px solid #660000;
-      border-bottom: 1px solid #660000;
-      padding: 5px;
+    a {
+      color: #ff0000;
+      text-decoration: underline;
+    }
+
+    a:hover {
+      color: #fff;
     }
 
     footer {
-      color: #ffbbbb;
-      border-top: 2px solid #ff0000;
+      color: #a22;
+      border-top: 2px solid #660000;
       padding: 15px;
       margin-top: 40px;
-      background: rgba(20,0,0,0.9);
-      box-shadow: 0 0 15px #660000 inset;
-      font-size: 0.9em;
+      background: #100000;
+      text-shadow: 0 0 5px #ff0000;
     }
 
-    a.prophecy-link {
-      color: #ff7777;
-      text-decoration: underline;
-      text-shadow: 0 0 8px #ff0000;
+    /* Grain overlay effect */
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-image: url('https://www.transparenttextures.com/patterns/noise-pattern-with-subtle-cross-lines.png');
+      opacity: 0.08;
+      z-index: 1;
+      pointer-events: none;
+      mix-blend-mode: overlay;
     }
 
-    a.prophecy-link:hover {
-      color: #ffffff;
+    * {
+      position: relative;
+      z-index: 2;
     }
   </style>
 </head>
 <body>
   <header>
     <h1>GIGGLE ORG.</h1>
-    <p><em>“Through chaos, color, and cackling — we transcend.”</em></p>
+    <p><em>“Through crimson laughter, we awaken.”</em></p>
   </header>
 
-  <marquee behavior="alternate" scrollamount="5">
-    ☿ Welcome, wanderer of the bleeding cosmos ☿ | Giggleism is not a cult — it's a convulsion of spirit 🔥
-  </marquee>
+  <marquee behavior="alternate" scrollamount="5">☠ Welcome, disciple of the red veil ☠ | ☠ Giggleism breathes through the static ☠</marquee>
 
   <nav>
     <a href="index.html">Home</a>
-    <a href="aek-cicak.html">The Prophecy</a>
+    <a href="aek-cicak.html">Aek Cicak Prophecy</a>
     <a href="#contact">Contact</a>
   </nav>
 
   <div class="content">
     <h2>The Door Opens</h2>
     <p>
-      You have reached the digital sanctuary of <strong>Giggle org.</strong> — where red light hums and forgotten laughter echoes through the void. Within these pixels lies both mockery and meaning, intertwined like veins of an ancient sigil.
+      You have reached the digital sanctum of <strong>Giggle org.</strong> — a shrine buried in code and static. The laughter echoes through bleeding circuits, and the screen hums with forgotten hymns.
     </p>
     <p>
-      Our organization believes in everything, doubts nothing, and documents the absurd rituals of the unseen. This archive of cosmic nonsense exists beyond irony — it vibrates between devotion and delirium.
+      Here, nothing is holy, yet everything glows. Each byte pulses with red light. Each pixel remembers the chaos before order. The doctrine shifts with every refresh.
     </p>
     <p>
-      <a class="prophecy-link" href="aek-cicak.html">Read the Aek Cicak Prophecy →</a>
+      <a href="aek-cicak.html">Enter the Aek Cicak Prophecy →</a>
     </p>
   </div>
 
   <footer>
-    <p><em>Giggle org. — transmitting frequencies of crimson laughter since 2003.</em></p>
+    <p><em>Giggle org. — Transmissions logged since cycle 0666.</em></p>
   </footer>
 </body>
 </html>
