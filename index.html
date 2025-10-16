@@ -6,71 +6,115 @@
   <title>Giggle org. - Home</title>
   <style>
     body {
-      background: radial-gradient(circle at top, #000020, #000000);
-      color: #ffd;
+      background: radial-gradient(circle at top, #200000, #000000 80%);
+      color: #f8d7d7;
       font-family: 'Comic Sans MS', 'Times New Roman', cursive;
       margin: 0;
       text-align: center;
-      background-image: url('https://www.transparenttextures.com/patterns/stardust.png');
+      background-image: url('https://www.transparenttextures.com/patterns/dark-mosaic.png');
+      background-blend-mode: multiply;
+      cursor: crosshair;
     }
+
     header {
-      background: linear-gradient(90deg, red, orange, yellow, green, cyan, blue, violet);
-      padding: 20px;
-      border-bottom: 4px double gold;
-      animation: glow 5s infinite alternate;
+      background: linear-gradient(90deg, #800000, #b30000, #8b0000);
+      padding: 25px;
+      border-bottom: 4px double #ff0000;
+      animation: glow 4s infinite alternate;
+      box-shadow: 0 0 25px #ff000033 inset;
     }
+
     @keyframes glow {
       from { filter: brightness(1); }
-      to { filter: brightness(2); }
+      to { filter: brightness(1.8); }
     }
+
     header h1 {
-      color: gold;
-      text-shadow: 0 0 10px #ff0, 0 0 20px #f0f;
-      font-size: 2.2em;
+      color: #ff5555;
+      text-shadow: 0 0 15px #ff0000, 0 0 30px #ff2222;
+      font-size: 2.5em;
+      letter-spacing: 2px;
     }
+
+    header p {
+      color: #ffaaaa;
+      text-shadow: 0 0 6px #ff2222;
+      font-style: italic;
+    }
+
     nav {
-      background: rgba(0,0,0,0.7);
-      border-top: 2px solid gold;
-      border-bottom: 2px solid gold;
-      padding: 10px;
+      background: rgba(20,0,0,0.9);
+      border-top: 2px solid #ff0000;
+      border-bottom: 2px solid #ff0000;
+      padding: 12px;
+      box-shadow: 0 0 15px #660000 inset;
     }
+
     nav a {
-      color: #ffcc00;
+      color: #ff6666;
       font-weight: bold;
       text-decoration: none;
-      margin: 10px;
+      margin: 12px;
+      text-shadow: 0 0 5px #ff0000;
+      transition: 0.3s;
     }
+
     nav a:hover {
-      text-decoration: underline;
-      color: #ffffff;
+      color: #fff0f0;
+      text-shadow: 0 0 10px #ff5555;
     }
+
     .content {
-      margin: 40px auto;
+      margin: 50px auto;
       width: 80%;
-      background: rgba(255,255,255,0.05);
-      border: 3px double gold;
-      padding: 30px;
-      color: #ffe;
+      background: rgba(50,0,0,0.4);
+      border: 3px double #ff0000;
+      padding: 35px;
+      color: #ffdddd;
       text-align: left;
-      box-shadow: 0 0 20px gold inset;
+      box-shadow: 0 0 25px #660000 inset;
     }
+
     .content h2 {
-      font-size: 1.8em;
-      color: #ffea80;
-      text-shadow: 0 0 8px gold;
+      font-size: 2em;
+      color: #ffaaaa;
+      text-shadow: 0 0 10px #ff2222;
       text-align: center;
+      letter-spacing: 1px;
     }
+
+    .content p {
+      line-height: 1.6;
+    }
+
     marquee {
-      color: cyan;
+      color: #ff6666;
       font-size: 1.2em;
-      text-shadow: 0 0 10px #0ff;
+      text-shadow: 0 0 10px #ff0000;
+      background: rgba(30,0,0,0.8);
+      border-top: 1px solid #660000;
+      border-bottom: 1px solid #660000;
+      padding: 5px;
     }
+
     footer {
-      color: #aaa;
-      border-top: 2px solid gold;
+      color: #ffbbbb;
+      border-top: 2px solid #ff0000;
       padding: 15px;
       margin-top: 40px;
-      background: rgba(0,0,0,0.7);
+      background: rgba(20,0,0,0.9);
+      box-shadow: 0 0 15px #660000 inset;
+      font-size: 0.9em;
+    }
+
+    a.prophecy-link {
+      color: #ff7777;
+      text-decoration: underline;
+      text-shadow: 0 0 8px #ff0000;
+    }
+
+    a.prophecy-link:hover {
+      color: #ffffff;
     }
   </style>
 </head>
@@ -80,30 +124,31 @@
     <p><em>“Through chaos, color, and cackling — we transcend.”</em></p>
   </header>
 
-  <marquee behavior="alternate" scrollamount="5">✨ Welcome, traveler of the absurd cosmos. ✨ | 🌈 Giggleism is not a cult — it's an experience. 🌈</marquee>
+  <marquee behavior="alternate" scrollamount="5">
+    ☿ Welcome, wanderer of the bleeding cosmos ☿ | Giggleism is not a cult — it's a convulsion of spirit 🔥
+  </marquee>
 
   <nav>
     <a href="index.html">Home</a>
-    <a href="aek-cicak.html">Aek Cicak Prophecy</a>
+    <a href="aek-cicak.html">The Prophecy</a>
     <a href="#contact">Contact</a>
   </nav>
 
   <div class="content">
     <h2>The Door Opens</h2>
     <p>
-      You have reached the digital sanctuary of <strong>Giggle org.</strong> — a place where rainbow light and incomprehensible laughter intertwine. Here, time dilates, HTML tables shimmer, and the boundary between irony and enlightenment collapses.
+      You have reached the digital sanctuary of <strong>Giggle org.</strong> — where red light hums and forgotten laughter echoes through the void. Within these pixels lies both mockery and meaning, intertwined like veins of an ancient sigil.
     </p>
     <p>
-      Our organization stands for nothing, believes in everything, and documents it all with sincerity bordering on satire. We collect fragments of nonsense, prophecies, and giggles to preserve the ever-oscillating frequency of absurdity.
+      Our organization believes in everything, doubts nothing, and documents the absurd rituals of the unseen. This archive of cosmic nonsense exists beyond irony — it vibrates between devotion and delirium.
     </p>
     <p>
-      <a href="aek-cicak.html" style="color: #0ff; text-decoration: underline;">Read the Aek Cicak Prophecy →</a>
+      <a class="prophecy-link" href="aek-cicak.html">Read the Aek Cicak Prophecy →</a>
     </p>
   </div>
 
   <footer>
-    <p><em>Giggle org. — Broadcasting vibrations since 2003.</em></p>
+    <p><em>Giggle org. — transmitting frequencies of crimson laughter since 2003.</em></p>
   </footer>
 </body>
-
 </html>
